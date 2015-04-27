@@ -1,0 +1,22 @@
+{
+    "name": "readability-api-client",
+    "type": "library",
+    "description": "The PHP Client for Readability API (https://www.readability.com/developers/api).",
+    "version": "1.0.0",
+    "keywords": ["readability"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Gopey",
+            "email": "gopeyx@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Radio\\Readability\\": "src"
+        }
+    }
+}
