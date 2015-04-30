@@ -106,7 +106,7 @@ class Reader extends AbstractClient
     {
         $parameters = [
             'url' => $url,
-            'favourite' => (int) $favorite,
+            'favorite' => (int) $favorite,
             'archive' => (int) $archive,
             'allow_duplicates' => (int) $allowDuplicates
         ];
@@ -139,8 +139,8 @@ class Reader extends AbstractClient
      */
     public function updateBookmark($bookmarkId, $parameters)
     {
-        if (isset($parameters['favourite'])) {
-            $parameters['favourite'] = (int) $parameters['favourite'];
+        if (isset($parameters['favorite'])) {
+            $parameters['favorite'] = (int) $parameters['favorite'];
         }
         if (isset($parameters['archive'])) {
             $parameters['archive'] = (int) $parameters['archive'];
